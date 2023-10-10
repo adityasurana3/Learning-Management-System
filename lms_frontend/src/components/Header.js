@@ -9,26 +9,35 @@ function Header(){
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav ms-auto">
-                    <a className="nav-link active" aria-current="page" href="https://www.google.com">Home</a>
-                    <a className="nav-link" href="https://www.google.com">Courses</a>
-                    <a className="nav-link" href="https://www.google.com">Teacher</a>
-                    <Link className="nav-link" to="/about">About</Link>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><Link className="dropdown-item" to="/login">Login</Link></li>
-                            <li><Link className="dropdown-item" to="/register">Register</Link></li>
-                            <li><hr className="dropdown-divider" /></li>
-                            <li><Link className="dropdown-item" to="/dashboard">Dashboard</Link></li>
-                            <li><a className="dropdown-item" href="/logot">Logout</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                </div>
+                    <div className="navbar-nav ms-auto">
+                        <a className="nav-link active" aria-current="page" href="https://www.google.com">Home</a>
+                        <a className="nav-link" href="https://www.google.com">Courses</a>
+                        <Link className="nav-link" to="/about">About</Link>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teacher
+                            </a>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><Link className="dropdown-item" to="/teacher-login">Login</Link></li>
+                                <li><Link className="dropdown-item" to="/teacher-register">Register</Link></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><Link className="dropdown-item" to="/teacher-dashboard">Dashboard</Link></li>
+                                <li><a className="dropdown-item" href="/teacher-logout">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                User
+                            </a>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><Link className="dropdown-item" to="/user-login">Login</Link></li>
+                                <li><Link className="dropdown-item" to="/user-register">Register</Link></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><Link className="dropdown-item" to="/user-dashboard">Dashboard</Link></li>
+                                <li><a className="dropdown-item" href="/user-logout">Logout</a></li>
+                            </ul>
+                        </li>                    
+                    </div>
                 </div>
             </div>
         </nav>

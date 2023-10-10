@@ -1,11 +1,11 @@
-import Sidebar from "./Sidebar";
+import TeacherSidebar from "./TeacherSidebar";
 
-function ProfileSetting() {
+function TeacherProfileSetting() {
   return (
     <div className="container mt-4">
       <div className="row">
         <aside className="col-md-3">
-          <Sidebar />
+          <TeacherSidebar />
         </aside>
         <section className="col-md-9">
           <div className="card">
@@ -51,4 +51,4 @@ function ProfileSetting() {
   );
 }
 
-export default ProfileSetting;
+export default TeacherProfileSetting;
