@@ -4,6 +4,9 @@ import Footer from './Footer';
 import About from './About'
 import { Route, Routes } from 'react-router-dom';
 import CourseDetail from './CourseDetail';
+import TeacherDetail from './TeacherDetail';
+
+// User
 import Login from './User/Login';
 import Register from './User/Register';
 import Dashboard from './User/Dashboard';
@@ -49,6 +52,7 @@ function Main(){
                 <Route path='/teacher-change-password' element={<TeacherChangePassword />}></Route>
                 <Route path='/add-course' element={<AddCourse />}></Route>
                 <Route path='/users-list' element={<UserList />}></Route>
+                <Route path='/teacher-detail/:teacher_id' element={<TeacherDetail />}></Route>
 
             </Routes>
             <Footer />
