@@ -26,6 +26,12 @@ import TeacherChangePassword from './Teacher/TeacherChangePassword';
 import AddCourse from './Teacher/AddCourse';
 import UserList from './Teacher/UserList';
 
+// List Pages
+import AllCourses from './AllCourses';
+import PopularCourses from './PopularCourses';
+import PopularTeacher from './PopularTeacher';
+import CategoryCourses from './CategoryCourses';
+
 
 function Main(){
     return(
@@ -53,6 +59,11 @@ function Main(){
                 <Route path='/add-course' element={<AddCourse />}></Route>
                 <Route path='/users-list' element={<UserList />}></Route>
                 <Route path='/teacher-detail/:teacher_id' element={<TeacherDetail />}></Route>
+                {/* List Pages */}
+                <Route path='/all-courses' element={<AllCourses />}></Route>
+                <Route path='/popular-courses' element={<PopularCourses />}></Route>
+                <Route path='/popular-teachers' element={<PopularTeacher />}></Route>
+                <Route path='/category/:category_slug' element={<CategoryCourses />}></Route>
 
             </Routes>
             <Footer />

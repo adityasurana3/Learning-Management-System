@@ -10,8 +10,8 @@ function Header(){
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto">
-                        <a className="nav-link active" aria-current="page" href="https://www.google.com">Home</a>
-                        <a className="nav-link" href="https://www.google.com">Courses</a>
+                        <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                        <Link className="nav-link" to="/all-courses">Courses</Link>
                         <Link className="nav-link" to="/about">About</Link>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

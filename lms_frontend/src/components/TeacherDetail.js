@@ -11,7 +11,7 @@ function TeacherDetail(){
                 <div className="col-8">
                     <h3>Teacher Name</h3>
                     <p>Course Description</p>
-                    <p className="fw-bold">Skills: <Link to="/teacher-detail/1">Python</Link>, <Link to="/teacher-detail/1">JavaScript</Link>, <Link to="/teacher-detail/1">C/C++</Link></p>
+                    <p className="fw-bold">Skills: <Link to="/category/python">Python</Link>, <Link to="/category/javascript">JavaScript</Link>, <Link to="/category/cpp">C/C++</Link></p>
                     <p className="fw-bold">Recent Course: <Link to="/teacher-detail/1">Python</Link></p>
                     <p className="fw-bold">Rating: 4/5</p>
                 </div>
